@@ -21,10 +21,10 @@ void dfs(int u) {
         std::cout << '\n';
     }
     for (int j = 1; j <= n; ++j) {
-        if (!st[j]){
+        if (!st[j]) {
             path[u] = j;
             st[j] = 1;
-            dfs(u+1);
+            dfs(u + 1);
             st[j] = 0;
         }
     }
