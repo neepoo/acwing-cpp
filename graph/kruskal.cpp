@@ -49,16 +49,16 @@ int main() {
         int b = item.b;
         int c = item.c;
         int pa = find(a);
-        int pb= find(b);
+        int pb = find(b);
         if (pa != pb) {
-            res+=c;
+            res += c;
             cnt++;
             p[pa] = pb;
         }
     }
-    if (cnt != n-1){
-        cout <<"impossible";
-    } else{
+    if (cnt != n - 1) {
+        cout << "impossible";
+    } else {
         cout << res;
     }
 }
